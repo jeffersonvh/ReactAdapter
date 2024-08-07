@@ -8,6 +8,8 @@ RUN npm install
 
 COPY . .
 
+ENV REACT_ENV=production
+
 RUN npm run build
 
 FROM nginx:alpine
